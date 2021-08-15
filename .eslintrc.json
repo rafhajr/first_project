@@ -20,11 +20,22 @@
         "@typescript-eslint"
     ],
     "rules": {
+      "class-methods-use-this": "off",
+      "@typescript-eslint/camelcase": "off",
+      "no-useless-constructor": "off",
       "import/extensions": [
         "error",
         "ignorePackages",
         {
           "ts": "never"
+        }
+      ],
+      "@typescript-eslint/naming-convention": [
+        "error",
+        {
+          "selector": "interface",
+          "prefix": ["I"],
+          "format": ["PascalCase"]
         }
       ]
     },
