@@ -7,7 +7,7 @@ import IAppointmentsRepossitory from '../repositories/IAppointmentsRepository';
 import Appointment from '../infra/typeorm/entities/Appointment';
 
 interface IRequest {
-  provider: string;
+  provider_id: string;
   date: Date;
 }
 
